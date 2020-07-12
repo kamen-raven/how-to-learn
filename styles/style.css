@@ -1,6 +1,6 @@
-/*div {
+div, img, section, body, h1, h2, h3, h4, p, span, main, a {
   border: solid 1px red;
-}*/
+}
 
 .page {
   min-width: 1100px;
@@ -11,15 +11,18 @@
   margin: 0 auto;
   /* выше для экранов больше 1600px отцентрировали весь контент */
   font-family: 'Helvetica Neue', Arial, sans-serif;
+  color: #000000;
 }
 
 /*logo*/
 
-.logo {
-  /*background-image: url(/images/logo_place_header.svg);
+/*.logo {
+  /*
+  background-image: url(/images/logo_place_header.svg);
   background-size: cover;
-  так и не понял, как правильно через фон или картинкой*/
+  так и не понял, как правильно через фон или картинкой
 }
+*/
 
 .logo_place_header {
   width: 183px;
@@ -46,13 +49,11 @@
   width: 730px;
   margin-left: 64px;
   align-self: center;
-}
-
-.header__title_text {
   font-size: 102px;
   font-weight: bold;
-  margin: auto;
   line-height: 96px;
+  color: #000000;
+  z-index: 2;
 }
 
 .header__subtitle {
@@ -60,13 +61,11 @@
   width: 388px;
   bottom: 30px;
   left: 64px;
-}
-
-.header__subtitle_text {
   font-size: 18px;
   font-weight: normal;
-  margin: auto;
   line-height: 25px;
+  color: #000000;
+  z-index: 2;
 }
 
 .header__link {
@@ -97,15 +96,165 @@
   right: 0;
 }
 
+/*description*/
+
+.description {
+  display: flex;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  justify-content: center;
+  align-self: center;
+}
+
+.two-columns {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 80%;
+}
+
+.two-columns__brief {
+  margin: 0;
+  width: 175px;
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 1.2;
+  color: #2f80ed;
+}
+
+.two-columns__main-text {
+  width: 80%;
+  min-width: 784px;
+  font-size: 24px;
+  font-weight: normal;
+  line-height: 34px;
+  color: #000000;
+}
+
+.two-columns__paragraph {
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+.two-columns__paragraph:last-of-type {
+  margin-bottom: 0;
+}
+
+.two-columns__span-accent {
+  font-weight: bold;
+}
+
+/*digits*/
+
+.digits {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  }
 
 
+.section-title {
+  width: 60%;
+  margin: 0 auto 20px;
+  display: flex;
+  justify-content: center;
+  font-size: 60px;
+  font-weight: bold;
+  line-height: 69px;
+  }
+
+.section-subtitle {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  font-size: 24px;
+  font-weight: normal;
+  line-height: 34px;
+}
+
+/*section-title_theme_light*/
+
+.section-title_theme_light {
+  color: #000;
+}
+
+.section-subtitle_theme_light {
+  color: #000;
+}
+
+/*section-title_theme_dark*/
 
 
+.section-title_theme_dark {
+  color: #fff;
+  margin-top: 90px;
 
-/* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
+}
+
+.section-subtitle_theme_dark {
+  color: #fff;
+}
 
 
-/* и элемента с модификатором вида ключ-значение */
+/*table*/
+
+.talbe {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  flex-wrap: wrap;
+  width: 1100px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.talbe_theme_dark {
+  margin-bottom: 90px;
+  position: relative;
+  z-index: 10;
+}
+
+/*
+.table__cell {
+  display: flex;
+  flex-direction: column;
+}
+*/
+
+
+.table__heading {
+  margin: auto;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 1.15;
+}
+
+.table__text {
+  margin: 20px 0 0;
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 1.2;
+}
+
+/*table_theme_light*/
+
+.table__cell_theme_light {
+  width: 250px;
+  margin-top: 60px;
+}
+
+/*
+.table__heading_theme_light {
+
+}
+
+.table__text_theme_light {
+
+}
+*/
+
+/*table_theme_dark*/
+
 .table__cell_theme_dark {
   width: 200px;
   color: white;
@@ -113,4 +262,81 @@
   margin-top: 80px;
 }
 
+.table__heading_theme_dark {
+  color: #fff;
+}
+
+.table__text_theme_dark {
+  color: #fff;
+
+}
+
+
+
+/*feynman*/
+
+.feynman {
+  background-color: #f2f2f2;
+  height: 790px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  }
+
+.feynman__title {
+  font-size: 120px;
+  font-weight: bold;
+  line-height: 1.15;
+  width: 648px;
+  margin: 100px 0 0;
+  z-index: 1;
+}
+
+.feynman__subtitle {
+  font-size: 36px;
+  font-weight: normal;
+  line-height: 51px;
+  margin: 70px 0 0;
+  z-index: 1;
+}
+
+.feynman__link {
+  font-size: 36px;
+  font-weight: normal;
+  line-height: 51px;
+  text-decoration: none;
+  color: #000000;
+  position: absolute;
+  bottom: 50%;
+  right: 48px;
+}
+
+.feynman__background-img {
+  width: 867px;
+  height: 637px;
+  background-image: url(/images/feynman.png);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+}
+
+/*kaufman*/
+
+.kaufman {
+  background-color:#1f1f1f;
+  position: relative;
+  overflow: hidden;
+}
+
+.kaufman__triangle {
+  background-image: url(/images/kaufman-triangle.svg);
+  width: 877px;
+  height: 877px;
+  position: absolute;
+  right: -210px;
+}
+
+/*footer*/
 
