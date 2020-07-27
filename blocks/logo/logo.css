@@ -1,0 +1,10 @@
+.logo {
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 183px;
+}
+
+.logo:hover {
+  opacity: 70%;
+  transition: opacity .3s ease-in;
+}
